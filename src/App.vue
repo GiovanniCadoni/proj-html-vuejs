@@ -1,5 +1,6 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import AppDownload from "./components/AppDownload.vue";
 
 export default {
   data() {
@@ -7,13 +8,14 @@ export default {
 
     };
   },
-  components: { AppHeader },
+  components: { AppHeader, AppDownload },
 };
 </script>
 
 <template>
 
 <AppHeader />
+<AppDownload />
 
 </template>
 
