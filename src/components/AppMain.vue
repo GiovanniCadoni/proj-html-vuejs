@@ -1,5 +1,6 @@
 <script>
 import AppWorkCulture from "./AppWorkCulture.vue";
+import AppSkills from "./AppSkills.vue";
 
 export default {
     data() {
@@ -7,7 +8,7 @@ export default {
 
         };
     },
-    components: { AppWorkCulture },
+    components: { AppWorkCulture,AppSkills },
 };
 </script>
 
@@ -15,6 +16,7 @@ export default {
     
     <div class="container">
         <AppWorkCulture />
+        <AppSkills />
     </div>
 
 </template>

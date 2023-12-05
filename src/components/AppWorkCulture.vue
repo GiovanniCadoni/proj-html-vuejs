@@ -2,7 +2,7 @@
 </script>
 
 <template>
-<div class="container">
+<div class="container-info">
     <div class="text">
         <p>EVERYTHING IN MAXCOACH</p>
         <h2>Learn about our Work Culture at MaxCoach</h2>
@@ -30,12 +30,13 @@
 </template>
 
 <style scoped lang="scss">
-.container{
+.container-info{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-bottom: 80px;
     .text{
         width: 410px;
