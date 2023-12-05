@@ -36,17 +36,4 @@
         width: calc(100% / 2);
     }
 }
-.stats{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h2{
-            font-size: 2.2rem;
-        }
-    }
-}
 </style>
