@@ -1,6 +1,7 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppDownload from "./components/AppDownload.vue";
+import AppMain from "./components/AppMain.vue";
 
 export default {
   data() {
@@ -8,7 +9,7 @@ export default {
 
     };
   },
-  components: { AppHeader, AppDownload },
+  components: { AppHeader, AppDownload, AppMain },
 };
 </script>
 
@@ -16,6 +17,7 @@ export default {
 
 <AppHeader />
 <AppDownload />
+<AppMain />
 
 </template>
 
