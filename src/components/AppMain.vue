@@ -1,6 +1,7 @@
 <script>
 import AppWorkCulture from "./AppWorkCulture.vue";
 import AppSkills from "./AppSkills.vue";
+import AppCourses from "./AppCourses.vue";
 
 export default {
     data() {
@@ -8,7 +9,7 @@ export default {
 
         };
     },
-    components: { AppWorkCulture,AppSkills },
+    components: { AppWorkCulture, AppSkills, AppCourses },
 };
 </script>
 
@@ -17,13 +18,15 @@ export default {
     <div class="container">
         <AppWorkCulture />
         <AppSkills />
+        <AppCourses />
     </div>
 
 </template>
 
 <style scoped lang="scss">
 .container{
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 80px;
     width: 80%;
     margin: auto;
 }

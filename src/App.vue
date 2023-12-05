@@ -5,6 +5,7 @@ import AppMain from "./components/AppMain.vue";
 import AppTestimonials from "./components/AppTestimonials.vue";
 import AppBlogs from "./components/AppBlogs.vue";
 import AppNewsletters from "./components/AppNewsletters.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   data() {
@@ -12,7 +13,7 @@ export default {
 
     };
   },
-  components: { AppHeader, AppDownload, AppMain, AppTestimonials, AppBlogs, AppNewsletters },
+  components: { AppHeader, AppDownload, AppMain, AppTestimonials, AppBlogs, AppNewsletters, AppFooter },
 };
 </script>
 
@@ -24,6 +25,7 @@ export default {
 <AppTestimonials />
 <AppBlogs />
 <AppNewsletters />
+<AppFooter />
 
 </template>
 
