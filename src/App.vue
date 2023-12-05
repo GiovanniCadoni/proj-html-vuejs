@@ -4,6 +4,7 @@ import AppDownload from "./components/AppDownload.vue";
 import AppMain from "./components/AppMain.vue";
 import AppTestimonials from "./components/AppTestimonials.vue";
 import AppBlogs from "./components/AppBlogs.vue";
+import AppNewsletters from "./components/AppNewsletters.vue";
 
 export default {
   data() {
@@ -11,7 +12,7 @@ export default {
 
     };
   },
-  components: { AppHeader, AppDownload, AppMain, AppTestimonials, AppBlogs },
+  components: { AppHeader, AppDownload, AppMain, AppTestimonials, AppBlogs, AppNewsletters },
 };
 </script>
 
@@ -22,6 +23,7 @@ export default {
 <AppMain />
 <AppTestimonials />
 <AppBlogs />
+<AppNewsletters />
 
 </template>
 
