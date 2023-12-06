@@ -11,6 +11,15 @@
     </div>
     <div class="images">
         <img src="../assets/images/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg" alt="stock-10">
+        <div class="hover-1">
+            <img src="../assets/images/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg" alt="">
+        </div>
+        <div class="hover-2">
+            <img src="../assets/images/maxcoach-shape-02.png" alt="">
+        </div>
+        <div class="hover-3">
+            <img src="../assets/images/maxcoach-shape-07.png" alt="">
+        </div>
     </div>
 </div>
 <div class="stats">
@@ -59,6 +68,33 @@
     }
     .images{
         width: calc(100% / 2);
+        position: relative;
+        z-index: 9999;
+        img{
+            border-radius: 5px;
+        }
+        .hover-1{
+            position:absolute;
+            top:-100px;
+            right: -100px;
+            img{
+                border-radius: 10px;
+            }
+        }
+        .hover-2{
+            position:absolute;
+            bottom:-80px;
+            right: 80px;
+        }
+        .hover-3{
+            position:absolute;
+            top:-90px;
+            right: 90px;
+            z-index: -10;
+            img{
+                width: 100px;
+            }
+        }
     }
 }
 .stats{

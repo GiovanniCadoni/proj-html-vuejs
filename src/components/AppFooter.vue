@@ -1,4 +1,5 @@
 <script>
+import { Transition } from "vue";
 import { store } from "../store.js";
 
 export default {
@@ -7,6 +8,12 @@ export default {
             store,
         };
     },
+    methods: {
+        toBack() {
+            window.scrollTo(0,0);
+            console.log("ritorno")
+        }
+    }
 };
 </script>
 
@@ -57,12 +64,27 @@ export default {
             </div>
         </div>
         <p class="rights"><i class="fa-regular fa-copyright"></i> 2020 Maxcoach. All rights Reserved</p>
+        <div @click="toBack" class="to-back">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
     </div>
 </template>
 
 <style scoped lang="scss">
 .background{
     background-color: black;
+    position: relative;
+    .to-back{
+        position: absolute;
+        bottom: 35px;
+        right: 40px;
+        color: white;
+        font-size: 1.2rem;
+        background-color: #1fad95;
+        padding: 15px 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
 }
 .rights{
         color: grey;

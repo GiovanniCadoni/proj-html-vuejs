@@ -9,6 +9,12 @@
             <input placeholder="Enter your email: " type="text">
             <button>Subscribe</button>
         </div>
+        <div class="hover-1">
+            <img src="../assets/images/maxcoach-shape-02.png" alt="">
+        </div>
+        <div class="hover-2">
+            <img src="../assets/images/maxcoach-shape-09.png" alt="">
+        </div>
     </div>
 
 </template>
@@ -19,6 +25,23 @@
     margin: auto;
     padding: 120px 0;
     text-align: center;
+    position: relative;
+    .hover-1{
+            position: absolute;
+            top: 160px;
+            right: -30px;
+            img{
+                width: 100px;
+            }
+        }
+    .hover-2{
+        position: absolute;
+        top: 60px;
+        right: -30px;
+        img{
+            width: 180px;
+        }
+    }
     .colored{
             color: #1fad95;
             font-style: normal;
@@ -51,6 +74,9 @@
             border-bottom-right-radius: 5px;
             border-top-right-radius: 5px;
             cursor: pointer;
+        }
+        button:hover{
+            filter: brightness(120%);
         }
     }
 }

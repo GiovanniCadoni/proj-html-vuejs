@@ -29,7 +29,7 @@ export default {
     background-color: #ededed;
 }
 .container{
-    padding-top: 120px;
+    padding-top: 160px;
     padding-bottom: 20px;
     width: 80%;
     margin: auto;

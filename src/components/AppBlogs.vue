@@ -91,5 +91,8 @@
                 justify-content: space-between;
             }
         }
+        .card:hover{
+            filter: brightness(80%);
+        }
     }
 }</style>

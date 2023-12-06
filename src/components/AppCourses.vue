@@ -38,7 +38,7 @@
                             <p><i class="fa-regular fa-user"></i> 62 Students</p>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
             <p class="information">Control your personal preference settings to get notified about appropriate courses. <a href="">View all courses <i class="fa-solid fa-arrow-right"></i></a> </p>
         </div>
@@ -106,6 +106,9 @@
                 display: flex;
                 justify-content: space-between;
             }
+        }
+        .card:hover{
+            filter: brightness(80%);
         }
     }
 }</style>

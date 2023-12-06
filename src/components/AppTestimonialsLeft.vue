@@ -45,6 +45,9 @@
     }
     .images{
         width: calc(100% / 2);
+        img{
+            border-radius: 5px;
+        }
     }
 }
 </style>

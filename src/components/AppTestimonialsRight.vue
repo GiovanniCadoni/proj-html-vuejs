@@ -5,6 +5,15 @@
 <div class="container-info">
     <div class="images">
         <img src="../assets/images/home-3-team-image.png" alt="home-team">
+        <div class="hover-1">
+            <img src="../assets/images/maxcoach-shape-07.png" alt="">
+        </div>
+        <div class="hover-2">
+            <img src="../assets/images/maxcoach-shape-05.png" alt="">
+        </div>
+        <div class="hover-3">
+            <img src="../assets/images/maxcoach-shape-01.png" alt="">
+        </div>
     </div>
     <div class="text">
         <p>EVERYTHING IN MAXCOACH</p>
@@ -46,9 +55,33 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        button:hover{
+            filter: brightness(120%);
+        }
     }
     .images{
         width: calc(100% / 2);
+        position: relative;
+        z-index: 9999;
+        .hover-1{
+            position: absolute;
+            bottom: -90px;
+            right: 135px;
+            z-index: -10;
+        }
+        .hover-2{
+            position: absolute;
+            top: 150px;
+            left: -90px;
+            img{
+                width: 140px;
+            }
+        }
+        .hover-3{
+            position: absolute;
+            bottom: 0px;
+            left: -200px;
+        }
     }
 }
 </style>

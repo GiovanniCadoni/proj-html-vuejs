@@ -5,8 +5,14 @@
 <div class="container-info">
     <div class="images">
         <img src="../assets/images/stock-full-hd-11-670x450.jpg" alt="stock-11">
-        <div class="hover">
+        <div class="hover-1">
             <img src="../assets/images/icon-youtube-play.png" alt="">
+        </div>
+        <div class="hover-2">
+            <img src="../assets/images/maxcoach-shape-07.png" alt="">
+        </div>
+        <div class="hover-3">
+            <img src="../assets/images/maxcoach-shape-05.png" alt="">
         </div>
     </div>
     <div class="text">
@@ -47,11 +53,36 @@
     .images{
         width: calc(100% / 2);
         position: relative;
-        .hover{
+        z-index: 9999;
+        img{
+            border-radius: 5px;
+        }
+        .hover-1{
             position: absolute;
             top: calc(50% - 35px);
             left: calc(50% - 50px);
             cursor: pointer;
+        }
+        .hover-1:hover{
+            filter: brightness(120%);
+        }
+        .hover-2{
+            position:absolute;
+            bottom:-70px;
+            right: -30px;
+            z-index: -10;
+            img{
+                width: 120px;
+            }
+        }
+        .hover-3{
+            position:absolute;
+            top: 20px;
+            left: -70px;
+            z-index: -10;
+            img{
+                width: 120px;
+            }
         }
     }
 }

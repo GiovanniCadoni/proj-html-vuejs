@@ -51,6 +51,9 @@
             font-weight: bolder;
             cursor: pointer;
         }
+        button:hover{
+            filter: brightness(120%);
+        }
         .options{
             background-color: white;
             padding: 15px;
