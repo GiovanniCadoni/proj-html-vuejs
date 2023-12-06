@@ -44,6 +44,7 @@
             font-weight: bolder;
             border: transparent;
             border-radius: 5px;
+            cursor: pointer;
         }
     }
     .images{

@@ -1,14 +1,24 @@
 <script>
+import { store } from "../store.js";
+
+export default {
+    data() {
+        return {
+            store,
+        };
+    },
+};
 </script>
 
 <template>
     <div class="background">
         <div class="container">
             <div class="address">
-                <h5>Address</h5>
-                <p>382 NE 191st St # 87394 Miami,FL 33179-3899</p>
+                <h5>{{ store.footer[0].title }}</h5>
+                <p v-for="(voices) in store.footer[0].info">{{ voices }}</p>
+                <!-- <p>382 NE 191st St # 87394 Miami,FL 33179-3899</p>
                 <p>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</p>
-                <p>support@maxcoach.com</p>
+                <p>support@maxcoach.com</p> -->
                 <ul>
                     <li><i class="fa-brands fa-square-facebook"></i></li>
                     <li><i class="fa-brands fa-square-twitter"></i></li>
@@ -18,27 +28,30 @@
             </div>
             <div class="navigation">
                 <div>
-                    <h5>Explore</h5>
+                    <h5>{{ store.footer[1].title }}</h5>
                     <ul>
-                        <li>Start here</li>
+                        <li v-for="(voices) in store.footer[1].info"><a href="">{{ voices }}</a></li>
+                        <!-- <li>Start here</li>
                         <li>Blog</li>
-                        <li>About us</li>
+                        <li>About us</li> -->
                     </ul>
                 </div>
                 <div class="space">
                     <ul>
-                        <li>Success story</li>
+                        <li v-for="(voices) in store.footer[2].info"><a href="">{{ voices }}</a></li>
+                        <!-- <li>Success story</li>
                         <li>Courses</li>
-                        <li>Contact us</li>
+                        <li>Contact us</li> -->
                     </ul>
                 </div>
                 <div>
-                    <h5>Information</h5>
+                    <h5>{{ store.footer[3].title }}</h5>
                     <ul>
-                        <li>Membership</li>
+                        <li v-for="(voices) in store.footer[3].info"><a href="">{{ voices }}</a></li>
+                        <!-- <li>Membership</li>
                         <li>Purchase guide</li>
                         <li>Privacy policy</li>
-                        <li>Terms of service</li>
+                        <li>Terms of service</li> -->
                     </ul>
                 </div>
             </div>
@@ -97,6 +110,10 @@
     .navigation{
         display: flex;
         gap: 50px;
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
     }
 }
 

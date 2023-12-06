@@ -69,6 +69,7 @@
 
         .card {
             width: calc(100% / 3);
+            cursor: pointer;
 
             img {
                 border-radius: 5px;

@@ -49,6 +49,7 @@
             border: transparent;
             color: #1fad95;
             font-weight: bolder;
+            cursor: pointer;
         }
         .options{
             background-color: white;
@@ -65,6 +66,7 @@
                 gap: 15px;
                 li{
                     list-style: none;
+                    cursor: pointer;
                 }
             }
         }

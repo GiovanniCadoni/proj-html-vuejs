@@ -50,6 +50,7 @@
             border: transparent;
             border-bottom-right-radius: 5px;
             border-top-right-radius: 5px;
+            cursor: pointer;
         }
     }
 }

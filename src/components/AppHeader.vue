@@ -1,16 +1,26 @@
 <script>
+import { store } from "../store.js";
+
+export default {
+    data() {
+        return{
+            store,
+        };
+    },
+};
 </script>
 
 <template>
     <div class="container-header">
         <header class="header-app">
             <ul class="navigation-header">
-                <li>Home <i class="fa-solid fa-chevron-down"></i></li>
+                <li v-for="(voices) in store.header">{{ voices }} <i class="fa-solid fa-chevron-down"></i></li>
+                <!-- <li>Home <i class="fa-solid fa-chevron-down"></i></li>
                 <li>Pages <i class="fa-solid fa-chevron-down"></i></li>
                 <li>Courses <i class="fa-solid fa-chevron-down"></i></li>
                 <li>Features <i class="fa-solid fa-chevron-down"></i></li>
                 <li>Blog <i class="fa-solid fa-chevron-down"></i></li>
-                <li>Shop <i class="fa-solid fa-chevron-down"></i></li>
+                <li>Shop <i class="fa-solid fa-chevron-down"></i></li> -->
             </ul>
             <div class="image-header">
                 <img src="../assets/images/dark-logo.png" alt="image-header">
@@ -45,6 +55,7 @@
                 align-items: center;
                 gap: 5px;
                 color: #3f3a64;
+                cursor: pointer;
                 i{
                     font-size: 0.7em;
                 }
@@ -66,6 +77,7 @@
             gap: 15px;
             i{
                 color: #3f3a64;
+                cursor: pointer;
             }
             .search-bar-header{
                 background-color: #e2e2e0;
@@ -77,6 +89,7 @@
                 }
                 i{
                     color: #1fad95;
+                    cursor: pointer;
                 }
             }
         }

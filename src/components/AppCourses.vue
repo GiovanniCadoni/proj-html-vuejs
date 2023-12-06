@@ -77,6 +77,7 @@
             width: calc(100% / 3);
             background-color: white;
             border-radius: 5px;
+            cursor: pointer;
             .text{
                 padding: 15px;
             }
