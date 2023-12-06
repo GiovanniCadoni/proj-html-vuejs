@@ -5,15 +5,15 @@
     <div class="background">
         <div class="container">
             <p>READ FOR MORE JOYMENT</p>
-            <h2>Latest From Our Blogs</h2>
+            <h2>Latest From <i class="colored">Our Blogs</i></h2>
             <div class="row">
                 <div class="card">
                     <img src="../assets/images/artist-blog-03-480x325.jpeg" alt="">
                     <p>Artist</p>
                     <h5>Brush Strokes Energize Trees in Painting</h5>
                     <div class="info">
-                        <p>May 15, 2020</p>
-                        <p>688 views</p>
+                        <p><i class="fa-regular fa-calendar"></i> May 15, 2020</p>
+                        <p><i class="fa-regular fa-eye"></i> 688 views</p>
                     </div>
                 </div>
                 <div class="card">
@@ -21,8 +21,8 @@
                     <p>Artist</p>
                     <h5>Pocket-Sized Notebooks Hold Miniature Paintings</h5>
                     <div class="info">
-                        <p>May 15, 2020</p>
-                        <p>603 views</p>
+                        <p><i class="fa-regular fa-calendar"></i> May 15, 2020</p>
+                        <p><i class="fa-regular fa-eye"></i> 603 views</p>
                     </div>
                 </div>
                 <div class="card">
@@ -30,8 +30,8 @@
                     <p>Artist</p>
                     <h5>Connection Between Self-Portraits and Identity</h5>
                     <div class="info">
-                        <p>May 15, 2020</p>
-                        <p>397 views</p>
+                        <p><i class="fa-regular fa-calendar"></i> May 15, 2020</p>
+                        <p><i class="fa-regular fa-eye"></i> 397 views</p>
                     </div>
                 </div>
             </div>
@@ -41,15 +41,20 @@
 
 <style scoped lang="scss">
 .background{
-    background-color: grey;
+    background-color: #ededed;
 }
 .container {
     width: 80%;
     margin: auto;
     padding: 120px 0;
+    .colored{
+            color: #1fad95;
+            font-style: normal;
+        }
 
     p {
         text-align: center;
+        color: grey;
     }
 
     h2 {

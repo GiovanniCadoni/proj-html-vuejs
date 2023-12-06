@@ -21,7 +21,8 @@ export default {
 
 <style scoped lang="scss">
 .container{
-    padding: 120px 0;
+    padding-top: 160px;
+    padding-bottom: 80px;
     width: 80%;
     margin: auto;
 }

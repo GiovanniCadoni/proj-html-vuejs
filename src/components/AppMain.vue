@@ -14,19 +14,23 @@ export default {
 </script>
 
 <template>
-    
-    <div class="container">
-        <AppWorkCulture />
-        <AppSkills />
-        <AppCourses />
+    <div class="background">
+        <div class="container">
+            <AppWorkCulture />
+            <AppSkills />
+            <AppCourses />
+        </div>
     </div>
 
 </template>
 
 <style scoped lang="scss">
+.background{
+    background-color: #ededed;
+}
 .container{
     padding-top: 120px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     width: 80%;
     margin: auto;
 }

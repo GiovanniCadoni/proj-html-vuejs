@@ -10,10 +10,10 @@
                 <p>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</p>
                 <p>support@maxcoach.com</p>
                 <ul>
-                    <li>Icon</li>
-                    <li>Icon</li>
-                    <li>Icon</li>
-                    <li>Icon</li>
+                    <li><i class="fa-brands fa-square-facebook"></i></li>
+                    <li><i class="fa-brands fa-square-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
                 </ul>
             </div>
             <div class="navigation">
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <p class="rights">2020 Maxcoach. All rights Reserved</p>
+        <p class="rights"><i class="fa-regular fa-copyright"></i> 2020 Maxcoach. All rights Reserved</p>
     </div>
 </template>
 
@@ -52,7 +52,7 @@
     background-color: black;
 }
 .rights{
-        color: white;
+        color: grey;
         font-size: 0.8rem;
         text-align: center;
         padding: 30px 0;
@@ -71,11 +71,13 @@
     }
     p{
         padding: 5px 0;
+        color: grey;
     }
     ul{
         li{
             list-style: none;
             padding: 5px 0;
+            color: grey;
         }
     }
     .space{
@@ -88,6 +90,7 @@
         padding: 25px 0;
             li{
                 list-style: none;
+                font-size: 1.6rem;
             }
         }
     }

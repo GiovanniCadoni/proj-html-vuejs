@@ -5,22 +5,22 @@
     <div class="container-header">
         <header class="header-app">
             <ul class="navigation-header">
-                <li>Options</li>
-                <li>Options</li>
-                <li>Options</li>
-                <li>Options</li>
-                <li>Options</li>
-                <li>Options</li>
+                <li>Home <i class="fa-solid fa-chevron-down"></i></li>
+                <li>Pages <i class="fa-solid fa-chevron-down"></i></li>
+                <li>Courses <i class="fa-solid fa-chevron-down"></i></li>
+                <li>Features <i class="fa-solid fa-chevron-down"></i></li>
+                <li>Blog <i class="fa-solid fa-chevron-down"></i></li>
+                <li>Shop <i class="fa-solid fa-chevron-down"></i></li>
             </ul>
             <div class="image-header">
                 <img src="../assets/images/dark-logo.png" alt="image-header">
             </div>
             <div class="options-header">
-                <i>icon</i>
-                <i>icon</i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-circle-user"></i>
                 <div class="search-bar-header">
                     <input type="text" placeholder="Search...">
-                    <i>icon</i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
         </header>
@@ -29,8 +29,6 @@
 
 <style scoped lang="scss">
 .container-header{
-    //DEBUG
-    border: 2px solid black;
     .header-app{
         height: 80px;
         width: 80%;
@@ -39,11 +37,17 @@
         align-items: center;
         justify-content: space-between;
         .navigation-header{
-            width: calc(100% / 3);
             display: flex;
-            gap: 10px;
+            gap: 18px;
             li{
                 list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: #3f3a64;
+                i{
+                    font-size: 0.7em;
+                }
             }
         }
         .image-header{
@@ -60,16 +64,19 @@
             align-items: center;
             justify-content: end;
             gap: 15px;
+            i{
+                color: #3f3a64;
+            }
             .search-bar-header{
-                background-color: lightgrey;
+                background-color: #e2e2e0;
                 padding: 10px;
                 border-radius: 5px;
                 input{
                     background-color: transparent;
                     border: transparent;
                 }
-                input:focus-visible{
-                    
+                i{
+                    color: #1fad95;
                 }
             }
         }

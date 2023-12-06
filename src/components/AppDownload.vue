@@ -10,10 +10,10 @@
             <button>Download free guidebook</button>
             <div class="options">
                 <ul>
-                    <li>Icon</li>
-                    <li>Icon</li>
-                    <li>Icon</li>
-                    <li>Icon</li>
+                    <li><i class="fa-solid fa-ruler-combined"></i></li>
+                    <li><i class="fa-solid fa-pen"></i></li>
+                    <li><i class="fa-solid fa-book"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
                 </ul>
             </div>
         </section>
@@ -47,17 +47,25 @@
             background-color: white;
             border-radius: 5px;
             border: transparent;
+            color: #1fad95;
+            font-weight: bolder;
         }
         .options{
             background-color: white;
-            padding: 10px;
+            padding: 15px;
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
             position: absolute;
             right: 0;
             top: 150px;
-            li{
-                list-style: none;
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                li{
+                    list-style: none;
+                }
             }
         }
     }

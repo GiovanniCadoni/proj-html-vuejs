@@ -5,9 +5,9 @@
 <div class="container-info">
     <div class="text">
         <p>EVERYTHING IN MAXCOACH</p>
-        <h2>Learn about our Work Culture at MaxCoach</h2>
+        <h2>Learn about our <i class="colored">Work Culture</i> at MaxCoach</h2>
         <p>Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
-        <p>Have question? Get free Guide -></p>
+        <a href=""> Have question? Get free Guide <i class="fa-solid fa-arrow-right"></i></a>
     </div>
     <div class="images">
         <img src="../assets/images/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg" alt="stock-10">
@@ -40,12 +40,21 @@
     padding-bottom: 80px;
     .text{
         width: 410px;
+        .colored{
+            color: #1fad95;
+            font-style: normal;
+        }
         h2{
             font-size: 2.8rem;
             padding: 15px 0;
         }
         p{
             padding-bottom: 10px;
+            color: grey;
+        }
+        a{
+            color:#1fad95;
+            font-weight: bolder;
         }
     }
     .images{
@@ -62,6 +71,7 @@
         align-items: center;
         h2{
             font-size: 2.2rem;
+            color: #1fad95;
         }
     }
 }
